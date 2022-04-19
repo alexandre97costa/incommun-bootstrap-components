@@ -1,0 +1,133 @@
+:root {
+    --incommun-cinza-700: #474d5a;
+    --incommun-cinza-500: #777f90;
+    --incommun-cinza-300: #b6bccd;
+    --incommun-cinza-100: #ebebeb;
+
+    /* cores claras */
+    --incommun-amarelo: #ffcc00;
+    --incommun-vermelho: #fc6049;
+    --incommun-salmao: #ffa372;
+    --incommun-turquesa: #64c3c7;
+    --incommun-castanho: #dcd587;
+    --incommun-lilas: #c9a9e8;
+
+    /* cores escuras */
+    --incommun-amarelo-escuro: #ddb201;
+    --incommun-vermelho-escuro: #d01001;
+    --incommun-salmao-escuro: #f65622;
+    --incommun-turquesa-escuro: #008184;
+    --incommun-castanho-escuro: #c8c159;
+    --incommun-lilas-escuro: #a46dae;
+
+    /* cores transparentes */
+    --incommun-amarelo-transp: rgba(255, 204, 0, 0.5);
+    --incommun-vermelho-transp: rgba(252, 96, 73, 0.5);
+    --incommun-salmao-transp: rgba(255, 163, 114, 0.5);
+    --incommun-turquesa-transp: rgba(100, 195, 199, 0.5);
+    --incommun-castanho-transp: rgba(220, 213, 135, 0.5);
+    --incommun-lilas-transp: rgba(201, 169, 232, 0.5);
+    --incommun-cinza-700-transp: rgba(71, 77, 90, 0.5);
+}
+
+.text-locked {
+    color: var(--incommun-cinza-300);
+}
+
+.btn-principal {
+    background-color: var(--incommun-amarelo);
+    color: black;
+    border-radius: 0;
+}
+
+.btn-outline-principal {
+    border-radius: 0;
+    color: var(--incommun-amarelo);
+    border-color: var(--incommun-amarelo);
+}
+
+
+.btn-secundario {
+    background-color: var(--incommun-cinza-500);
+    color: white;
+    border-radius: 0;
+}
+
+.btn-outline-secundario {
+    border-radius: 0;
+    color: var(--incommun-cinza-500);
+    border-color: var(--incommun-cinza-500);
+}
+
+/* hovers */
+.btn-principal:hover,
+.btn-principal:active {
+    background-color: var(--incommun-amarelo-escuro);
+}
+.btn-outline-principal:hover,
+.btn-outline-principal:active {
+    background-color: var(--incommun-amarelo);
+}
+.btn-secundario:hover,
+.btn-secundario:active {
+    color: white;
+    background-color: var(--incommun-cinza-700);
+}
+.btn-outline-secundario:hover,
+.btn-outline-secundario:active {
+    color: white;
+    background-color: var(--incommun-cinza-500);
+}
+/* actives */
+.btn-principal:focus {
+    box-shadow: 0 0 0 0.25rem var(--incommun-amarelo-transp);
+}
+.btn-outline-principal:focus {
+    box-shadow: 0 0 0 0.25rem var(--incommun-amarelo-transp);
+    background-color: var(--incommun-amarelo);
+}
+.btn-secundario:focus {
+    color: white;
+    background-color: var(--incommun-cinza-700);
+    box-shadow: 0 0 0 0.25rem var(--incommun-cinza-700-transp);
+}
+.btn-outline-secundario:focus {
+    color: white;
+    background-color: var(--incommun-cinza-500);
+    box-shadow: 0 0 0 0.25rem var(--incommun-cinza-700-transp);
+}
+
+
+/* Accordion shenanigans */
+.accordion-button:not(.collapsed) {
+    color: var(--incommun-amarelo);
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+
+/* Checkboxes e Radios */
+
+.form-check-input {
+    --size: 1.5rem;
+    width: var(--size);
+    height: var(--size);
+    margin-left: calc(var(--size) * -1.3) !important;
+    transition: background-color 200ms;
+}
+
+.form-check-input:focus {
+    border-color: var(--incommun-amarelo);
+    outline: 0;
+    /* box-shadow: 0 0 0 0.25rem var(--incommun-amarelo-transp); */
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: var(--incommun-amarelo);
+    border-color: var(--incommun-amarelo-escuro);
+}
